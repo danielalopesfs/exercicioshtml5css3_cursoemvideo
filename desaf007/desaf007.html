@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favcon/htmlico.ico" type="image/x-icon">
+    <title>Imagem flexível.</title>
+    <style>
+
+        body {
+            background-color: rgba(128, 128, 128, 0.233);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Desafio da <strong>imagem flexível - Banco de Gringotts.</strong></h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho de sua janela para aproveitar melhor a experiência. &#x1F913 </p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1200px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="A imagem flexível funciona.">
+    </picture>    
+</body>
+</html>
